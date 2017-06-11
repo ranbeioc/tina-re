@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://matthew.wagerfield.com/parallax/ -->
+<html class="mouse"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+
+	<title>TINA</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="Matthew Wagerfield">
+	<meta name="description" content="Simple, lightweight Parallax Engine that reacts to the orientation of a smart device">
+	<meta name="keywords" content="parallax,javascript,jquery,zepto,plugin">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./bg2_files/styles.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="http://matthew.wagerfield.com/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+
+	<!-- Apple Startup Images -->
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" media="(device-width: 320px)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-2048x1496.png" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+
+	
+
+</head>
+<body>
+
+	<div id="fb-root"></div>
+
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 1440px; height: 826px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+			<li class="layer" data-depth="0.00" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-5.09379px, -5.73082px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-5.09379px, -5.73082px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-5.09379px, -5.73082px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-5.09379px, -5.73082px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="light orange d phase-3"></div></li>
+			<li class="layer" data-depth="0.15" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-7.64069px, -8.59623px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+				<ul class="rope depth-10">
+					<li><img src="./bg2_files/rope.png" alt="Rope"></li>
+					<li class="hanger position-2">
+						<div class="board cloud-2 swing-1"></div>
+					</li>
+					<li class="hanger position-4">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board birds swing-5"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.20" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-10.1876px, -11.4616px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><h1 class="title">TINA<em>.Re</em></h1></li>
+			<li class="layer" data-depth="0.30" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-15.2814px, -17.1925px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+				<ul class="rope depth-30">
+					<li><img src="./bg2_files/rope.png" alt="Rope"></li>
+					<li class="hanger position-1">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-5">
+						<div class="board cloud-4 swing-1"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.30" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-15.2814px, -17.1925px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="wave paint depth-30"></div></li>
+			<li class="layer" data-depth="0.40" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-20.3752px, -22.9233px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="wave plain depth-40"></div></li>
+			<li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-25.469px, -28.6541px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="wave paint depth-50"></div></li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-30.5628px, -34.3849px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="lighthouse depth-60"></div></li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-30.5628px, -34.3849px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+				<ul class="rope depth-60">
+					<li><img src="./bg2_files/rope.png" alt="Rope"></li>
+					<li class="hanger position-3">
+						<div class="board birds swing-5"></div>
+					</li>
+					<li class="hanger position-6">
+						<div class="board cloud-2 swing-2"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board cloud-3 swing-4"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-30.5628px, -34.3849px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="wave plain depth-60"></div></li>
+			<li class="layer" data-depth="0.80" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-40.7504px, -45.8466px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="wave plain depth-80"></div></li>
+			<li class="layer" data-depth="1.00" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-50.9379px, -57.3082px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="wave paint depth-100"></div></li>
+		</ul>
+		<section id="about" class="wrapper about accelerate hide">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>TINA<em>.Restructure</em></h1>
+						</header>
+						<p>TINA Reconfiguration<br>This project is a collaboration between each group, Front end product and system reconfiguration.</p>
+						<p>You can feedback as follows<br><a href="mailto:ran.bei@tlkg.com?cc=pm@tlkg.com&amp;subject=【TINA-Re】重构项目反馈&amp;body=有关【TINA-Re】项目意见和建议问题如下：" title="马上给我反馈" class="btn btn-danger btn-xs"><i class="fa fa-envelope"></i> Owner &amp; Team</a></p>
+
+						<div class="social">
+							<i class="fa fa-code-fork"></i> Skyfire build at 2017-6-10 03:24:33
+						</div>
+
+						<ul class="links">
+							<li><a target="_blank" href="https://github.com/ranbeioc/tina/archive/master.zip"><i class="fa fa-github"></i> Sous</a></li>
+							<li><a target="_blank" href="https://skyfire.gitbooks.io/tina/content/"><i class="fa fa-book"></i> Docs</a></li>
+							<li><a target="_blank" href="http://www.processon.com/team/invite/530b13310cf2fe02622e280d/JjwDRRpJ"><i class="fa fa-cog"></i> Flows</a></li>
+							<li><a target="_blank" href="https://account.teambition.com/login"><i class="fa fa-tumblr"></i> WBS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<button id="toggle" class="toggle i">
+			<div class="cross">
+				<div class="x"></div>
+				<div class="y"></div>
+			</div>
+		</button>
+		
+		<footer>
+			<div class="fb-like" data-href="http://wagerfield.github.io/parallax/" data-width="400" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://wagerfield.github.io/parallax/" data-text="Tilting is fun! Check out #parallax.js by @wagerfield &amp; @claudioguglieri »">Tweet</a>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="./bg2_files/libraries.min.js"></script>
+	<script src="./bg2_files/jquery.parallax.js"></script>
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+
+	// Twitter stuff.
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+	// Facebook stuff.
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=709933052350821";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+
+</body></html>
